@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__container container">
+			<div class="header__top">
+
+				<button aria-label="раскрыть меню" id="burger" class="btn header__burger">
+					<svg width="30" height="23" viewbox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect width="30" height="3" fill="white" />
+						<rect y="10" width="30" height="3" fill="white" />
+						<rect y="20" width="30" height="3" fill="white" />
+					</svg>
+				</button>
+
+				<div class="header__top-left">
+					<svg class="header__logo" width="78" height="78" viewbox="0 0 78 78" fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M63.0559 28.8815L54.2119 28.8947L27.8012 53.7922H10.0354V36.4593L34.2348 13.8486L17.993 13.8992L0 30.6625V64.1511H34.0283L63.0418 36.5687L63.0559 28.8815Z"
+							fill="white" />
+						<path
+							d="M43.9721 13.8486L14.9586 41.4318L14.9453 49.1182L23.7884 49.1049L50.1991 24.2075H67.9649V41.5404L43.7656 64.1511L60.0074 64.1013L78.0004 47.338V13.8486H43.9721Z"
+							fill="white" />
+					</svg>
+					<nav class="header__nav" id="menu">
+						<button class="btn header__close" id="#close">
+							<svg width="29" height="29" viewbox="0 0 29 29" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<rect x="2.63623" width="37.2838" height="3.72838" transform="rotate(45 2.63623 0)"
+									fill="#6EBBD3" />
+								<rect y="26.3636" width="37.2838" height="3.72838" transform="rotate(-45 0 26.3636)"
+									fill="#6EBBD3" />
+							</svg>
+						</button>
+						<ul class="header__nav-list">
+							<li class="header__nav-item"><a class="header__nav-link" href="#">Main</a></li>
+							<li class="header__nav-item"><a class="header__nav-link" href="#gallery">Gallery</a></li>
+							<li class="header__nav-item"><a class="header__nav-link" href="#news">News</a></li>
+							<li class="header__nav-item"><a class="header__nav-link" href="#">Profile</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__call">
+					<strong class="header__tel">+544 3490 00000</strong>
+					<p class="header__text">Звони скорее!</p>
+				</div>
+			</div>
+
+			<div class="header__bottom">
+				<p class="header__bottom-info">Найдено 349 котов</p>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<section class="gallery">
+			<div class="gallery__container container">
+				<div class="gallery__sort">
+					<p class="gallery__sort-name">Сортировать по:</p>
+					<button class="btn gallery__sort-btn" id="price-btn" data-sort-asc="1">Цене
+						<svg width="15" height="15" viewbox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0)">
+								<path
+									d="M8.0853 11.6669L14.7604 4.99166C14.9149 4.83727 15 4.63118 15 4.41142C15 4.19167 14.9149 3.98557 14.7604 3.83118L14.2689 3.3396C13.9487 3.01973 13.4282 3.01973 13.1084 3.3396L7.50311 8.94492L1.89157 3.33338C1.73706 3.17899 1.53109 3.09375 1.31146 3.09375C1.09158 3.09375 0.885606 3.17899 0.730973 3.33338L0.239635 3.82496C0.0851249 3.97947 3.76698e-06 4.18545 3.75737e-06 4.4052C3.74777e-06 4.62496 0.0851249 4.83105 0.239635 4.98544L6.9208 11.6669C7.0758 11.8216 7.28275 11.9066 7.50275 11.9061C7.7236 11.9066 7.93042 11.8216 8.0853 11.6669Z"
+									fill="black" />
+							</g>
+							<defs>
+								<clippath id="clip0">
+									<rect width="15" height="15" fill="white" transform="translate(15) rotate(90)" />
+								</clippath>
+							</defs>
+						</svg>
+					</button>
+					<button class="btn gallery__sort-btn" id="age-btn" data-sort-asc="1">Возрасту
+						<svg width="15" height="15" viewbox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0)">
+								<path
+									d="M8.0853 11.6669L14.7604 4.99166C14.9149 4.83727 15 4.63118 15 4.41142C15 4.19167 14.9149 3.98557 14.7604 3.83118L14.2689 3.3396C13.9487 3.01973 13.4282 3.01973 13.1084 3.3396L7.50311 8.94492L1.89157 3.33338C1.73706 3.17899 1.53109 3.09375 1.31146 3.09375C1.09158 3.09375 0.885606 3.17899 0.730973 3.33338L0.239635 3.82496C0.0851249 3.97947 3.76698e-06 4.18545 3.75737e-06 4.4052C3.74777e-06 4.62496 0.0851249 4.83105 0.239635 4.98544L6.9208 11.6669C7.0758 11.8216 7.28275 11.9066 7.50275 11.9061C7.7236 11.9066 7.93042 11.8216 8.0853 11.6669Z"
+									fill="black" />
+							</g>
+							<defs>
+								<clippath id="clip">
+									<rect width="15" height="15" fill="white" transform="translate(15) rotate(90)" />
+								</clippath>
+							</defs>
+						</svg>
+					</button>
+				</div>
+
+				<div class="gallery__cards">
+					<ul class="gallery__list">
+						<li class="gallery__item" data-cat-price="30000" data-cat-age="2">
+							<picture>
+								<source srcset="img/gallery/cat1.png" media="(max-width:1920px)">
+								<img class="gallery__item-img" src="img/gallery/cat1.webp" alt="Кот №1">
+							</picture>
+							<div class="gallery__item-info">
+								<div class="gallery__item-sale sale">
+									<p>-40%</p>
+								</div>
+								<button class="btn gallery__item-like">
+									<svg width="46" height="46" viewbox="0 0 46 46" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M33.7812 2.69531C31.2851 2.69531 28.9966 3.4863 26.9794 5.04634C25.0456 6.54197 23.758 8.44693 23 9.83214C22.242 8.44684 20.9544 6.54197 19.0206 5.04634C17.0034 3.4863 14.7149 2.69531 12.2188 2.69531C5.25298 2.69531 0 8.39293 0 15.9485C0 24.1112 6.55347 29.696 16.4746 38.1505C18.1593 39.5863 20.0689 41.2138 22.0538 42.9494C22.3154 43.1785 22.6514 43.3047 23 43.3047C23.3486 43.3047 23.6846 43.1785 23.9462 42.9495C25.9312 41.2136 27.8408 39.5862 29.5265 38.1496C39.4465 29.696 46 24.1112 46 15.9485C46 8.39293 40.747 2.69531 33.7812 2.69531Z"
+											fill="white" fill-opacity="0.5" />
+									</svg>
+								</button>
+								<div class="like">Котик ждет вас в "Избранном"</div>
+								<div class="gallery__item-content">
+									<p class="gallery__item-content-name">Кот полосатый</p>
+									<div class="gallery__item-descr">
+										<svg width="4" height="26" viewbox="0 0 4 26" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<rect width="4" height="26" fill="#6EBBD3" />
+										</svg>
+										<p class="gallery__item-descr-color">Коричневый<br>окрас</p>
+										<div class="gallery__item-descr-age">
+											<p class="gallery__item-descr-age--one">2 мес.</p>
+											<p class="gallery__item-descr-age--two">Возраст</p>
+										</div>
+										<div class="gallery__item-descr-config">
+											<p class="gallery__item-descr-config--one">4</p>
+											<p class="gallery__item-descr-config--two">Кол-во лап</p>
+										</div>
+
+									</div>
+									<p class="gallery__item-price">30 000 руб.</p>
+								</div>
+							</div>
+							<button class="btn gallery__item-btn">Купить</button>
+						</li>
+
+						<li class="gallery__item" data-cat-price="40000" data-cat-age="2">
+							<picture>
+								<source srcset="img/gallery/cat2.png" media="(max-width:1920px)">
+								<img class="gallery__item-img" src="img/gallery/cat2.webp" alt="Кот №2">
+							</picture>
+							<div class="gallery__item-info">
+								<button class="btn gallery__item-like">
+									<svg width="46" height="46" viewbox="0 0 46 46" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M33.7812 2.69531C31.2851 2.69531 28.9966 3.4863 26.9794 5.04634C25.0456 6.54197 23.758 8.44693 23 9.83214C22.242 8.44684 20.9544 6.54197 19.0206 5.04634C17.0034 3.4863 14.7149 2.69531 12.2188 2.69531C5.25298 2.69531 0 8.39293 0 15.9485C0 24.1112 6.55347 29.696 16.4746 38.1505C18.1593 39.5863 20.0689 41.2138 22.0538 42.9494C22.3154 43.1785 22.6514 43.3047 23 43.3047C23.3486 43.3047 23.6846 43.1785 23.9462 42.9495C25.9312 41.2136 27.8408 39.5862 29.5265 38.1496C39.4465 29.696 46 24.1112 46 15.9485C46 8.39293 40.747 2.69531 33.7812 2.69531Z"
+											fill="white" fill-opacity="0.5" />
+									</svg>
+								</button>
+								<div class="like">Котик ждет вас в "Избранном"</div>
+								<div class="gallery__item-content">
+									<p class="gallery__item-content-name">Кот полосатый</p>
+									<div class="gallery__item-descr">
+										<svg width="4" height="26" viewbox="0 0 4 26" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<rect width="4" height="26" fill="#6EBBD3" />
+										</svg>
+										<p class="gallery__item-descr-color">Коричневый<br>окрас</p>
+										<div class="gallery__item-descr-age">
+											<p class="gallery__item-descr-age--one">2 мес.</p>
+											<p class="gallery__item-descr-age--two">Возраст</p>
+										</div>
+										<div class="gallery__item-descr-config">
+											<p class="gallery__item-descr-config--one">4</p>
+											<p class="gallery__item-descr-config--two">Кол-во лап</p>
+										</div>
+									</div>
+									<p class="gallery__item-price">40 000 руб.</p>
+								</div>
+							</div>
+							<button class="btn gallery__item-btn gallery__item-btn--black">Продан</button>
+						</li>
+
+						<li class="gallery__item" data-cat-price="20000" data-cat-age="2">
+							<picture>
+								<source srcset="img/gallery/cat3.png" media="(max-width:1920px)">
+								<img class="gallery__item-img" src="img/gallery/cat3.webp" alt="Кот №3">
+							</picture>
+							<div class="gallery__item-info">
+								<button class="btn gallery__item-like">
+									<svg width="46" height="46" viewbox="0 0 46 46" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M33.7812 2.69531C31.2851 2.69531 28.9966 3.4863 26.9794 5.04634C25.0456 6.54197 23.758 8.44693 23 9.83214C22.242 8.44684 20.9544 6.54197 19.0206 5.04634C17.0034 3.4863 14.7149 2.69531 12.2188 2.69531C5.25298 2.69531 0 8.39293 0 15.9485C0 24.1112 6.55347 29.696 16.4746 38.1505C18.1593 39.5863 20.0689 41.2138 22.0538 42.9494C22.3154 43.1785 22.6514 43.3047 23 43.3047C23.3486 43.3047 23.6846 43.1785 23.9462 42.9495C25.9312 41.2136 27.8408 39.5862 29.5265 38.1496C39.4465 29.696 46 24.1112 46 15.9485C46 8.39293 40.747 2.69531 33.7812 2.69531Z"
+											fill="white" fill-opacity="0.5" />
+									</svg>
+								</button>
+								<div class="like">Котик ждет вас в "Избранном"</div>
+								<div class="gallery__item-content">
+									<p class="gallery__item-content-name">Кот полосатый</p>
+									<div class="gallery__item-descr">
+										<svg width="4" height="26" viewbox="0 0 4 26" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<rect width="4" height="26" fill="#6EBBD3" />
+										</svg>
+										<p class="gallery__item-descr-color">Коричневый<br>окрас</p>
+										<div class="gallery__item-descr-age">
+											<p class="gallery__item-descr-age--one">2 мес.</p>
+											<p class="gallery__item-descr-age--two">Возраст</p>
+										</div>
+										<div class="gallery__item-descr-config">
+											<p class="gallery__item-descr-config--one">4</p>
+											<p class="gallery__item-descr-config--two">Кол-во лап</p>
+										</div>
+									</div>
+									<p class="gallery__item-price">20 000 руб.</p>
+								</div>
+							</div>
+							<button class="btn gallery__item-btn">Купить</button>
+						</li>
+
+						<li class="gallery__item" data-cat-price="25000" data-cat-age="5">
+							<picture>
+								<source srcset="img/gallery/cat1.png" media="(max-width:1920px)">
+								<img class="gallery__item-img" src="img/gallery/cat1.webp" alt="Кот №4">
+							</picture>
+							<div class="gallery__item-info">
+								<button class="btn gallery__item-like">
+									<svg width="46" height="46" viewbox="0 0 46 46" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M33.7812 2.69531C31.2851 2.69531 28.9966 3.4863 26.9794 5.04634C25.0456 6.54197 23.758 8.44693 23 9.83214C22.242 8.44684 20.9544 6.54197 19.0206 5.04634C17.0034 3.4863 14.7149 2.69531 12.2188 2.69531C5.25298 2.69531 0 8.39293 0 15.9485C0 24.1112 6.55347 29.696 16.4746 38.1505C18.1593 39.5863 20.0689 41.2138 22.0538 42.9494C22.3154 43.1785 22.6514 43.3047 23 43.3047C23.3486 43.3047 23.6846 43.1785 23.9462 42.9495C25.9312 41.2136 27.8408 39.5862 29.5265 38.1496C39.4465 29.696 46 24.1112 46 15.9485C46 8.39293 40.747 2.69531 33.7812 2.69531Z"
+											fill="white" fill-opacity="0.5" />
+									</svg>
+								</button>
+								<div class="like">Котик ждет вас в "Избранном"</div>
+								<div class="gallery__item-content">
+									<p class="gallery__item-content-name">Кот полосатый</p>
+									<div class="gallery__item-descr">
+										<svg width="4" height="26" viewbox="0 0 4 26" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<rect width="4" height="26" fill="#6EBBD3" />
+										</svg>
+										<p class="gallery__item-descr-color">Коричневый<br>окрас</p>
+										<div class="gallery__item-descr-age">
+											<p class="gallery__item-descr-age--one">5 мес.</p>
+											<p class="gallery__item-descr-age--two">Возраст</p>
+										</div>
+										<div class="gallery__item-descr-config">
+											<p class="gallery__item-descr-config--one">4</p>
+											<p class="gallery__item-descr-config--two">Кол-во лап</p>
+										</div>
+									</div>
+									<p class="gallery__item-price">25 000 руб.</p>
+								</div>
+							</div>
+							<button class="btn gallery__item-btn">Купить</button>
+						</li>
+
+						<li class="gallery__item" data-cat-price="30000" data-cat-age="2">
+							<picture>
+								<source srcset="img/gallery/cat3.png" media="(max-width:1920px)">
+								<img class="gallery__item-img" src="img/gallery/cat3.webp" alt="Кот №5">
+							</picture>
+							<div class="gallery__item-info">
+								<div class="gallery__item-sale sale">
+									<p>-40%</p>
+								</div>
+								<button class="btn gallery__item-like">
+									<svg width="46" height="46" viewbox="0 0 46 46" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M33.7812 2.69531C31.2851 2.69531 28.9966 3.4863 26.9794 5.04634C25.0456 6.54197 23.758 8.44693 23 9.83214C22.242 8.44684 20.9544 6.54197 19.0206 5.04634C17.0034 3.4863 14.7149 2.69531 12.2188 2.69531C5.25298 2.69531 0 8.39293 0 15.9485C0 24.1112 6.55347 29.696 16.4746 38.1505C18.1593 39.5863 20.0689 41.2138 22.0538 42.9494C22.3154 43.1785 22.6514 43.3047 23 43.3047C23.3486 43.3047 23.6846 43.1785 23.9462 42.9495C25.9312 41.2136 27.8408 39.5862 29.5265 38.1496C39.4465 29.696 46 24.1112 46 15.9485C46 8.39293 40.747 2.69531 33.7812 2.69531Z"
+											fill="white" fill-opacity="0.5" />
+									</svg>
+								</button>
+								<div class="like">Котик ждет вас в "Избранном"</div>
+								<div class="gallery__item-content">
+									<p class="gallery__item-content-name">Кот полосатый</p>
+									<div class="gallery__item-descr">
+										<svg width="4" height="26" viewbox="0 0 4 26" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<rect width="4" height="26" fill="#6EBBD3" />
+										</svg>
+										<p class="gallery__item-descr-color">Коричневый<br>окрас</p>
+										<div class="gallery__item-descr-age">
+											<p class="gallery__item-descr-age--one">2 мес.</p>
+											<p class="gallery__item-descr-age--two">Возраст</p>
+										</div>
+										<div class="gallery__item-descr-config">
+											<p class="gallery__item-descr-config--one">4</p>
+											<p class="gallery__item-descr-config--two">Кол-во лап</p>
+										</div>
+									</div>
+									<p class="gallery__item-price">30 000 руб.</p>
+								</div>
+							</div>
+							<button class="btn gallery__item-btn">Купить</button>
+						</li>
+
+						<li class="gallery__item" data-cat-price="10000" data-cat-age="2">
+							<picture>
+								<source srcset="img/gallery/cat2.png" media="(max-width:1920px)">
+								<img class="gallery__item-img" src="img/gallery/cat2.webp" alt="Кот №6">
+							</picture>
+							<div class="gallery__item-info">
+								<button class="btn gallery__item-like">
+									<svg width="46" height="46" viewbox="0 0 46 46" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M33.7812 2.69531C31.2851 2.69531 28.9966 3.4863 26.9794 5.04634C25.0456 6.54197 23.758 8.44693 23 9.83214C22.242 8.44684 20.9544 6.54197 19.0206 5.04634C17.0034 3.4863 14.7149 2.69531 12.2188 2.69531C5.25298 2.69531 0 8.39293 0 15.9485C0 24.1112 6.55347 29.696 16.4746 38.1505C18.1593 39.5863 20.0689 41.2138 22.0538 42.9494C22.3154 43.1785 22.6514 43.3047 23 43.3047C23.3486 43.3047 23.6846 43.1785 23.9462 42.9495C25.9312 41.2136 27.8408 39.5862 29.5265 38.1496C39.4465 29.696 46 24.1112 46 15.9485C46 8.39293 40.747 2.69531 33.7812 2.69531Z"
+											fill="white" fill-opacity="0.5" />
+									</svg>
+								</button>
+								<div class="like">Котик ждет вас в "Избранном"</div>
+								<div class="gallery__item-content">
+									<p class="gallery__item-content-name">Кот полосатый</p>
+									<div class="gallery__item-descr">
+										<svg width="4" height="26" viewbox="0 0 4 26" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<rect width="4" height="26" fill="#6EBBD3" />
+										</svg>
+										<p class="gallery__item-descr-color">Коричневый<br>окрас</p>
+										<div class="gallery__item-descr-age">
+											<p class="gallery__item-descr-age--one">2 мес.</p>
+											<p class="gallery__item-descr-age--two">Возраст</p>
+										</div>
+										<div class="gallery__item-descr-config">
+											<p class="gallery__item-descr-config--one">4</p>
+											<p class="gallery__item-descr-config--two">Кол-во лап</p>
+										</div>
+									</div>
+									<p class="gallery__item-price">10 000 руб.</p>
+								</div>
+							</div>
+							<button class="btn gallery__item-btn gallery__item-btn--black">Продан</button>
+						</li>
+					</ul>
+					<div class="gallery__cards-show"><button class="btn gallery__cards-btn">Показать еще 20</button>
+					</div>
+				</div>
+				<button class="btn gallery__btn-up" id="#top">
+					<svg width="18" height="12" viewbox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M8.29764 0.999386L0.287559 9.00962C0.102145 9.19488 -8.06437e-08 9.4422 -6.91167e-08 9.7059C-5.75898e-08 9.96961 0.102145 10.2169 0.287559 10.4022L0.87731 10.9921C1.2616 11.3759 1.88618 11.3759 2.26988 10.9921L8.99627 4.2657L15.7301 10.9996C15.9155 11.1848 16.1627 11.2871 16.4263 11.2871C16.6901 11.2871 16.9373 11.1848 17.1228 10.9995L17.7124 10.4097C17.8979 10.2242 18 9.97707 18 9.71337C18 9.44966 17.8979 9.20234 17.7124 9.01708L9.69504 0.999386C9.50904 0.813681 9.26071 0.711682 8.99671 0.712267C8.73169 0.711682 8.48349 0.813681 8.29764 0.999386Z"
+							fill="white" />
+					</svg>
+				</button>
+			</div>
+		</section>
+
+		<section class="news" id="news">
+			<div class="news__container container container--flex">
+				<div class="news__left">
+					<p class="news__left-title">
+						Успей купить!
+					</p>
+					<p class="news__left-descr">
+						Подпишись и успей словить все акции
+					</p>
+				</div>
+
+				<div class="news__right">
+					<form class="news__right-form">
+						<label class="news__right-form-label">
+							<input class="news__right-form-input" aria-label="форма для заполнения" type="email"
+								data-validate-field="mail" placeholder="Email" name="email">
+						</label>
+
+						<button class="btn news__right-form-btn">Подписаться</button>
+					</form>
+					<label class="news__label">
+						<input class="news__right-agree-input" type="checkbox" name="agree" checked>
+						<span class="check-style"></span>
+						<span class="news__right-agree-text">Подписаться на новости</span>
+					</label>
+
+
+				</div>
+			</div>
+		</section>
+
+	</main>
+	<script src="js/just-validate.min.js" defer></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+	<script src="js/index.js" defer></script>
+</body>
+
+
+</html>

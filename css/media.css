@@ -1,0 +1,304 @@
+@media (max-width: 1920px) {
+
+	.news__right-form-input,
+	.news__right-form-btn {
+		width: 300px;
+	}
+}
+
+@media (max-width: 1440px) {
+
+	.news__right-form-input {
+		width: 20.833vw;
+	}
+
+	.news__right-form-btn {
+		width: 17.361vw;
+	}
+}
+
+
+@media (max-width: 1100px) {
+
+	.like {
+		font-size: 14px;
+	}
+
+}
+
+@media (max-width: 1000px) {
+	.gallery__list {
+		justify-items: center;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.gallery__item {
+		width: 380px;
+	}
+
+	.news__right-form {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.news__right-form-input {
+		margin-bottom: 20px;
+	}
+
+	.news__right-form-btn {
+		width: 20.833vw;
+	}
+
+	.js-validate-error-label {
+		position: absolute;
+		top: -24px;
+		left: 0px;
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 822px) {
+
+	.header {
+		padding-top: 16px;
+		padding-bottom: 16px;
+	}
+
+	.header__top {
+		margin-top: 7px;
+	}
+
+	.header__top-left {
+		flex-direction: column;
+	}
+
+	.header__tel {
+		font-size: 20px;
+	}
+
+	.header__nav-list {
+		margin-top: 0;
+	}
+
+	.gallery__item {
+		width: 300px;
+	}
+
+	.gallery__item-descr-config {
+		display: none;
+	}
+
+	.gallery__item-sale {
+		margin-top: 10px;
+		margin-left: 6px;
+	}
+
+	.gallery__item-like {
+		margin-right: 6px;
+		margin-top: 10px;
+	}
+
+	.news__container {
+		flex-direction: column;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	.news__left {
+		margin-left: 0;
+		text-align: center;
+	}
+
+	.news__left-descr {
+		width: auto;
+	}
+
+	.news__right {
+		margin-right: 0;
+		margin-top: 20px;
+		text-align: center;
+	}
+
+	.news__right-form {
+		display: block;
+		margin-bottom: 0;
+	}
+
+	.news__right-form-input,
+	.news__right-form-btn {
+		width: 200px;
+	}
+
+	.js-validate-error-label {
+		top: -40px;
+	}
+}
+
+
+@media (max-width: 630px) {
+
+	.header__burger,
+	.header__close {
+		display: block;
+	}
+
+	.header__nav,
+	.header__bottom-info,
+	.header__logo,
+	.gallery__item-descr {
+		display: none;
+	}
+
+	.is-active {
+		position: absolute;
+		top: -23px;
+		left: 0;
+		z-index: 20;
+		display: block;
+		padding: 30px 50px;
+		width: 300px;
+		height: 300px;
+		background-color: var(--white-color);
+	}
+
+	.header__nav-list {
+		display: block;
+	}
+
+	.header__close {
+		margin-bottom: 20px;
+	}
+
+	.header__top {
+		margin-bottom: 0;
+	}
+
+	.header__nav-item {
+		color: var(--main-color);
+		font-size: 20px;
+		transition: color, .3s, ease;
+	}
+
+	.header__nav-item:hover {
+		color: var(--active-color);
+		transition: color, .3s, ease;
+	}
+
+	.header__nav-item:not(:last-child) {
+		margin-bottom: 15px;
+	}
+
+	.gallery__item {
+		width: 250px;
+	}
+
+	.gallery__item-info {
+		padding: 9px 5px 9px 9px;
+	}
+
+	.gallery__item-content-name {
+		margin-bottom: 5px;
+	}
+
+	.gallery__item-content-name,
+	.gallery__item-price {
+		font-size: 20px;
+	}
+
+	.news__left-title {
+		margin-bottom: 15px;
+		font-size: 40px;
+	}
+
+	.news__left-descr {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 540px) {
+
+	.header__tel {
+		font-size: 16px;
+	}
+
+	.header__text {
+		font-size: 14px;
+	}
+
+	.gallery {
+		padding-bottom: 30px;
+	}
+
+	.gallery__sort-name {
+		margin-right: 10px;
+		font-size: 14px;
+	}
+
+	.gallery__sort-btn {
+		font-size: 14px;
+	}
+
+	.gallery__sort-btn:not(:last-child) {
+		margin-right: 10px;
+	}
+
+	.gallery__sort-btn svg {
+		margin-left: 0px;
+		width: 10px;
+	}
+
+	.gallery__sort-btn:last-child svg {
+		margin-left: 0px;
+	}
+
+	.gallery__list {
+		grid-template-columns: repeat(1, 1fr);
+		margin-bottom: 20px;
+	}
+
+	.gallery__item-img,
+	.gallery__item {
+		width: 100%;
+	}
+
+	.gallery__item-sale {
+		margin-left: 36px;
+		margin-top: 34px;
+	}
+
+	.gallery__item-like {
+		margin-top: 34px;
+		margin-right: 34px;
+	}
+
+	.gallery__cards-btn {
+		padding: 16px 80px;
+	}
+
+	.gallery__btn-up {
+		display: none;
+	}
+
+	.like {
+		top: 0;
+	}
+}
+
+@media (max-width: 420px) {
+
+	.news__right-form-input {
+		margin-right: 0px;
+	}
+
+	.news__right-form-btn {
+		margin-bottom: 10px;
+	}
+
+	.news__left {
+		padding: 0 10px;
+	}
+
+	.news__left-title {
+		font-size: 30px;
+	}
+}
